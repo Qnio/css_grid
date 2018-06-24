@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Css Grig nesting</title>
+    <style>
+        body {
+            color: #fff;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+        }
+        #content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* grid-auto-rows: minmax(200px, auto); */
+            grid-template-rows: repeat(3, minmax(200px, auto));
+            grid-gap: 1em;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        #content div{
+            background: #3bbced;
+            padding: 30px;
+        }
+        #content div:nth-child(even){
+            background: #777;
+        }
+      
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div>1</div>
+        <div>2</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ex quibusdam repudiandae delectus cumque provident voluptates, eligendi blanditiis perspiciatis suscipit hic sapiente ut aliquam obcaecati fugit veniam pariatur vel fuga, dolorem, tempore architecto. Sit eos commodi architecto. Necessitatibus recusandae illum, quam maxime inventore dicta. Harum, aliquam rerum, iusto quo nam cum fugiat obcaecati qui odit voluptates et earum. </div>
+        <div>4</div>
+        <div>5</div>
+        <div class="nested">
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+        </div>
+        <div>9</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        <div>16</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <title>CSS Grid excercises 1</title>
+    <style>
+        body {
+            margin: 40px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+            font-size: 0.8em;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 70% 30%;
+            /* grid-column-gap: 1em;
+            grid-row-gap: 1em; */
+            grid-gap: 1em;
+        }
+
+        .wrapper > div {
+            background: #eee;
+            padding: 1em;
+        }
+
+        .wrapper > div:nth-child(odd){
+            background: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is CSS Grid style website</h1>
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero fugiat, laborum minus molestiae expedita temporibus, animi optio, doloribus incidunt pariatur eum nostrum iure atque nesciunt quis rerum neque! Sunt nulla aliquam repellat deleniti neque. Ex magni, quam, magnam aliquid excepturi corrupti accusantium molestias natus consequuntur quas atque quaerat tenetur voluptatibus maiores ad delectus assumenda mollitia. Nulla inventore iusto aspernatur delectus ab numquam, eligendi quae quas ullam asperiores fugit sapiente repudiandae itaque animi odit! Itaque inventore ratione magnam ipsum beatae et.
+        </div>
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, sapiente aliquid error sunt doloribus quaerat molestiae. Rem quia excepturi molestias laborum deleniti et praesentium asperiores, nulla ipsa. Reprehenderit, architecto labore.
+        </div>
+        <div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero fugiat, laborum minus molestiae expedita temporibus, animi optio, doloribus incidunt pariatur eum nostrum iure atque nesciunt quis rerum neque! Sunt nulla aliquam repellat deleniti neque. Ex magni, quam, magnam aliquid excepturi corrupti accusantium molestias natus consequuntur quas atque quaerat tenetur voluptatibus maiores ad delectus assumenda mollitia. Nulla inventore iusto aspernatur delectus ab numquam, eligendi quae quas ullam asperiores fugit sapiente repudiandae itaque animi odit! Itaque inventore ratione magnam ipsum beatae et.
+        </div>
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, sapiente aliquid error sunt doloribus quaerat molestiae. Rem quia excepturi molestias laborum deleniti et praesentium asperiores, nulla ipsa. Reprehenderit, architecto labore.
+        </div>
+    </div>
+</body>
+</html>
